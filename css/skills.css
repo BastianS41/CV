@@ -1,0 +1,168 @@
+.skills{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.skills-title{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills-skill{
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 42px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
+}
+
+.skills-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.lenguage-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%; 
+    text-align: center;
+}
+
+.progress-container {
+    width: 60%;
+    background-color: #ddd;
+    height: 15px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    width: 75%;
+    height: 100%;
+    background-color: #05747B;
+    position: relative;
+}
+
+.progress-bar-eng {
+    width: 50%; 
+    height: 100%;
+    background-color: #05747B;
+    position: relative;
+}
+
+.progress-value {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.spanish, .english {
+    font-size: 20px;
+}
+
+.project-title{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    display: inline-block; 
+    vertical-align: middle; 
+    position: relative;
+}
+
+.column img {
+    max-width: 100%;
+    height: 200px;
+}
+
+.button {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--line-profile);
+    color: white; 
+    padding: 5px 5px; 
+    border: none; 
+    cursor: pointer;
+    width: 150px;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 900px */
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column {
+        height: auto;
+        text-align: center;
+    }
+
+    .skills-title {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .skills-skill {
+        font-size: 18px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .button{
+        bottom: 5px; 
+    }
+    .column {
+        margin-bottom: 10px;
+    }
+
+    .column img {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}
